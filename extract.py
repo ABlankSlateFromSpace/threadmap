@@ -8,43 +8,40 @@ from google.genai import types
 client = genai.Client()
 
 def extract_opportunities(chat_text):
+    """Sends the chat text to Gemini and gets structured JSON back."""
     print("🧠 Analyzing chat log with Gemini AI...")
     
     prompt = f"""
-    You are an expert networking and business intelligence assistant.
-    Analyze the following chat transcript and extract all people mentioned, 
-    along with any professional opportunities, projects, or help they need.
-
-    Format the output as a strict JSON object with a single key "data" containing a list of objects.
-    Each object must have:
-    - "name": Name of the person
-    - "role_company": Their role or company (if known, else "Unknown")
-    - "opportunity": What they are looking for, offering, or working on
-    - "contact_info": Any handles or email mentioned (else "None")
-
-    Chat Transcript:
-    \"\"\"
-    {chat_text}
-    \"\"\"
+    You are an expert data extraction AI. Analyze the following chat log and extract any business opportunities, freelance gigs, hiring needs, or partnership requests.
+    
+    Return the data strictly in this JSON format:
+    {{
+        "data": [
+            {{
+                "name": "Person's name",
+                "role_company": "Their role or company if mentioned, otherwise 'Unknown'",
+                "opportunity": "Clear summary of what they are looking for or offering",
+                "contact_info": "Email, handle, or contact details mentioned, otherwise 'None'"
+            }}
+        ]
+    }}
+    
+    Raw Chat Log:
+    {chat_text} 
     """
+    # ^ Make sure it says {chat_text} right there at the bottom of the prompt!
 
-    # Using gemini-3.5-flash (Google's blindingly fast, free-tier model)
     response = client.models.generate_content(
-        model='gemini-3.5-flash',
+        model='gemini-2.5-flash',
         contents=prompt,
         config=types.GenerateContentConfig(
-            response_mime_type="application/json"  # Forces Gemini to return valid JSON
+            response_mime_type="application/json",
         ),
     )
-    
     return response.text
 
 # 2. Test Data
-sample_chat = """
-[10:00 AM] Alex (DevOps @ TechCorp): Hey everyone! We are looking for a freelance React dev to help us redesign our frontend landing page. HMU if interested or email alex@techcorp.io.
-[10:15 AM] Sarah Jenkins: Just joined! I'm an AI researcher working on a new LLM wrapper for productivity. Looking for co-founders.
-[10:32 AM] David: Anyone know a good mobile dev? I have a client looking to build an iOS app.
-"""
+sample_chat = """[1:00 PM] Elon: Looking for a rocket engineer to help build an engine for Mars. Hit me up at elon@spacex.com."""
 
 # 3. Execution
 if __name__ == "__main__":
