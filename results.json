@@ -1,10 +1,82 @@
 {
     "data": [
         {
-            "name": "Marie",
+            "name": "Eversource Energy",
             "role_company": "Unknown",
-            "opportunity": "Shared information about an opening for Software Engineers (SWE role) at Amazon in Seattle, which reportedly just opened this week.",
+            "opportunity": "Offering solutions to small businesses to optimize energy use and lower energy bills.",
+            "contact_info": "eversource-ma.com"
+        },
+        {
+            "name": "Give a Cake Bakery",
+            "role_company": "Unknown",
+            "opportunity": "Seeking community partnerships and volunteers to strengthen communities through baking, as highlighted in their new LinkedIn publication 'Behind the Bake'.",
             "contact_info": "None"
+        },
+        {
+            "name": "Kevin Shim",
+            "role_company": "Creator (65k+) | Marketing @ ServiceNow",
+            "opportunity": "Promoting a partnership with 'Stanley', an AI content writer, offering 7 days free to help with LinkedIn content creation.",
+            "contact_info": "https://lnkd.in/gaPvr_FW"
+        },
+        {
+            "name": "Aditya Saini",
+            "role_company": "AI & Data Science Student | Machine Learning \u00b7 Deep Learning \u00b7 Data Science",
+            "opportunity": "Showcasing advanced skills in Reinforcement Learning, Deep Learning, PyTorch, Python, and CUDA through a self-built Flappy Bird AI project, implicitly seeking opportunities in related fields.",
+            "contact_info": "https://lnkd.in/gXQjY8yC (Github link)"
+        },
+        {
+            "name": "MaeAnna Edwards",
+            "role_company": "Passionate Leader. College Access Professional. Avid puzzle lover. (at Minds Matter Boston)",
+            "opportunity": "Hiring for a 'Manager of Volunteers' role at Minds Matter Boston, responsible for volunteer recruitment, engagement, and retention. Also seeking volunteers and mentors.",
+            "contact_info": "https://ideali.st/Z2ggVv (Application link)"
+        },
+        {
+            "name": "Sterling Snow",
+            "role_company": "Co-Founder and CEO of Redo / Venture Partner at Pelion",
+            "opportunity": "Offering $100 shopping credit to any shopper for Redo brands, as part of a promotional campaign for Redo's partner brands.",
+            "contact_info": "None (engagement via tagging brands)"
+        },
+        {
+            "name": "Samarjeet Singh",
+            "role_company": "Algorithm Enthusiast | C++ & Python Developer | AI/ML Learner | Building Real-World Projects | Student @ Rungta College",
+            "opportunity": "Sharing information about 10 paid student programs in CS/AI/ML, including Google Summer of Code, Microsoft Learn Student Ambassadors, and MLH Fellowship, to help students find opportunities with stipends, benefits, or rewards.",
+            "contact_info": "None (follow for resources)"
+        },
+        {
+            "name": "Dylan Bowes",
+            "role_company": "Aerospace Engineering @ Arizona State University",
+            "opportunity": "Seeking internship opportunities in Aerospace Engineering, demonstrating hands-on skills in Structures, CFD, Flight Control Systems, Object Tracking & Targeting Pipelines, and Propulsion Systems through a self-built autonomous drone project.",
+            "contact_info": "None (engagement via comments/YouTube video by August 1st)"
+        },
+        {
+            "name": "WildApricot by Momentive Software",
+            "role_company": "Unknown",
+            "opportunity": "Offering a free trial of their all-in-one member portal software for organizations looking to upgrade their website and member management.",
+            "contact_info": "https://lnkd.in/eYayh_g5"
+        },
+        {
+            "name": "Ethan Yip",
+            "role_company": "MTS @ Resonance \u00b7 Director @ HTSI Global",
+            "opportunity": "Hosting an exclusive black-tie yacht gala on July 24th in San Francisco for networking with YC startups, VCs, founders, investors, and top CS/AI students. Seeking invitees who have shipped, built, or backed significant projects.",
+            "contact_info": "DM Ethan Yip directly"
+        },
+        {
+            "name": "MassRobotics",
+            "role_company": "Unknown",
+            "opportunity": "Organizing 'Founders and Funders Capital Forum' and other events that bring together robotics & physical AI founders, corporates, and industry investors for networking, discussions on capital, and scaling in hard tech.",
+            "contact_info": "https://lnkd.in/eZFRidvS (Learn more about upcoming events)"
+        },
+        {
+            "name": "QuestBridge",
+            "role_company": "Unknown",
+            "opportunity": "Offering a Medical School Supplement for Scholars and Alumni, providing an opportunity to be considered for a four-year scholarship funding tuition at partner medical schools (Icahn School of Medicine at Mount Sinai and Tufts University School of Medicine).",
+            "contact_info": "https://lnkd.in/eWhRMqFx"
+        },
+        {
+            "name": "Metacto",
+            "role_company": "Unknown",
+            "opportunity": "Offering AI roadmap consulting services to help leadership determine workflow priorities, potential changes, and risks before AI moves into production.",
+            "contact_info": "metacto.com"
         }
     ]
 }
