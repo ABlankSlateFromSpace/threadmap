@@ -1,0 +1,28 @@
+{
+    "data": [
+        {
+            "name": "Kevin",
+            "role_company": "Unknown",
+            "opportunity": "Building an e-commerce platform for a local clothing brand; looking for a Python/Django developer.",
+            "contact_info": "Telegram: @kevinbuilds"
+        },
+        {
+            "name": "Amanda",
+            "role_company": "UI/UX Designer",
+            "opportunity": "Looking for freelance UI/UX audit gigs to build up her portfolio.",
+            "contact_info": "amandadesigns.io"
+        },
+        {
+            "name": "Marcus",
+            "role_company": "CEO @ DataStream",
+            "opportunity": "Hiring an ML engineering intern for Fall 2026 (must be familiar with data pipelines).",
+            "contact_info": "careers@datastream.ai"
+        },
+        {
+            "name": "Zee",
+            "role_company": "Unknown",
+            "opportunity": "Looking for a contact at Stripe to help resolve a payment gateway bug for a client project.",
+            "contact_info": "None"
+        }
+    ]
+}

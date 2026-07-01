@@ -49,12 +49,28 @@ sample_chat = """
 # 3. Execution
 if __name__ == "__main__":
     try:
-        raw_result = extract_opportunities(sample_chat)
+        # --- NEW CODE: READ FROM THE REAL TEXT FILE ---
+        input_filename = "chat_log.txt"
         
-        # Pretty print the JSON output
+        print(f"📂 Reading raw chat logs from '{input_filename}'...")
+        with open(input_filename, "r", encoding="utf-8") as file:
+            real_chat_data = file.read()
+            
+        # Pass the file contents to Gemini
+        raw_result = extract_opportunities(real_chat_data)
         parsed_json = json.loads(raw_result)
+        
         print("\n🔥 SUCCESS! EXTRACTED THREADMAP DATA:")
         print(json.dumps(parsed_json, indent=4))
         
+        # Save the results
+        output_filename = "results.json"
+        with open(output_filename, "w", encoding="utf-8") as f:
+            json.dump(parsed_json, f, indent=4)
+            
+        print(f"\n💾 Data successfully saved to your project folder as '{output_filename}'!")
+        
+    except FileNotFoundError:
+        print("\n❌ Error: Could not find 'chat_log.txt'. Make sure you created it!")
     except Exception as e:
         print(f"\n❌ Pipeline failed: {e}")
